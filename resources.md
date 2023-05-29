@@ -9,3 +9,9 @@
 [Carbon emissions of streaming](https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/)
 
 [An email](https://carbonliteracy.com/the-carbon-cost-of-an-email/)
+
+[A day of bitcoin mining](https://www.theatlantic.com/science/archive/2023/03/crypto-bitcoin-mining-carbon-emissions-climate-change-impact/673468/#)
+
+[Crypto mining more broadly](https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
+
+[web page view](https://www.websitecarbon.com/faq/)

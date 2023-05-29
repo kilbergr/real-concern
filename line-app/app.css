@@ -1,0 +1,39 @@
+body {
+    height: 10000vh;
+    transition: background 1s ease;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.line {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    border-top: 2px solid black;
+    transition: height 0.3s ease-out;
+    z-index: -1;
+}
+
+#heightDisplay {
+    position: fixed;
+    top: 50%;
+    width: 100vw;
+    color: black
+}
+
+.instruction {
+    z-index: 1;
+    top: 40px;
+    color: black;
+}
+
+
+#app {
+    height: 100000px;
+    width: 100%;
+}
