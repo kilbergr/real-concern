@@ -15,3 +15,15 @@
 [Crypto mining more broadly](https://www.whitehouse.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf)
 
 [web page view](https://www.websitecarbon.com/faq/)
+
+[Google data centers](https://cloud.google.com/blog/topics/sustainability/the-year-in-carbon-free-energy-at-google)
+
+[desktop, laptop, screen](https://www.it.ox.ac.uk/article/environment-and-it)
+
+[bitcoin consumption](https://ccaf.io/cbnsi/cbeci)
+
+[reduce carbon footprint](https://8billiontrees.com/carbon-offsets-credits/carbon-footprint-of-the-internet/#ref-18)
+
+[crypto assets](https://www.whitehouse.gov/ostp/news-updates/2022/09/08/fact-sheet-climate-and-energy-implications-of-crypto-assets-in-the-united-states/)
+
+[filecoin green](https://filecoin.energy/methodology)
