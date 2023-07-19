@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "real-concern"
+version = "0.1.0"
+description = "Packages for The Cloud"
+authors = ["R I B Z <kilbergr@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^2.3.2"
+python-kasa = "^0.5.2"
+subprocess-run = "^0.0.8"
+
+[tool.poetry.group.dev.dependencies]
+Flask = "^2.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
