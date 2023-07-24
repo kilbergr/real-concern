@@ -1,12 +1,13 @@
 html {
-    background: purple;
+    background-image: url("images/light-cloud.jpg");
     z-index: -1;
   }
   
+  
   .scroll-section,
   .scroll-item {
-    height: 600px;
-    font-size: 60px;
+    height: 100vh;
+    font-size: 7vh;
   }
   
   .scroll-section {
@@ -30,10 +31,12 @@ html {
     align-items: center;
     justify-content: center;
     color: black;
+    background: bisque;
+    opacity: 50%;
   }
-  
+/*   
   .scroll-item:nth-of-type(1) {
-    background: #df408d;
+    background: bisque;
     opacity: 70%;
   }
   
@@ -48,4 +51,4 @@ html {
   .scroll-item:nth-of-type(4) {
     background: #8360A6;
   }
-  
+   */
