@@ -3,7 +3,7 @@ body.style.backgroundColor = 'white';
 
 // trigger this function every time the user scrolls
 window.onscroll = function () {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
   const heightDisplay = document.getElementById('heightDisplay');
   const startingPoint = 0;
   var fadeImage = document.getElementById("fadeImage");
@@ -16,11 +16,14 @@ window.onscroll = function () {
   line.style.height = `${height}px`;
   heightDisplay.textContent = `Carbon: ${height} g`;
 
-  var scroll = window.pageYOffset;
+  var scroll = window.scrollY;
   if (scroll < 600) {
     body.style.backgroundColor = 'white';
+    fetch('/on?time=1')
     googleSearch.style.top = '100vh';
-  } else if (scroll >= 600 && scroll < 1200) {
+  } else if (scroll >= 600 && scroll < 700) {
+    fetch('/on?time=5')
+  } else if (scroll >= 700 && scroll < 1200) {
     body.style.backgroundColor = 'rgb(255, 237, 237)';
     googleSearch.classList.add("show");
     googleSearch.style.top = (100 - ((scroll - 600) / 6)) + 'vh';
