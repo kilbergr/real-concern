@@ -16,7 +16,7 @@ body {
 
 .line {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 0;
     width: 100vw;
     border-top: 2px solid black;
@@ -26,7 +26,7 @@ body {
 
 #heightDisplay {
     position: fixed;
-    top: 50%;
+    top: 20%;
     width: 100vw;
     color: black
 }
@@ -37,14 +37,48 @@ body {
     color: black;
 }
 
-.icons {
+/* .pins {
     position: fixed;
     transform: translateX(-50%);
     z-index: 1;
     opacity: 0;
     transition: opacity 0.5s ease;
+} */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    position: fixed;
+    top: 25%
+  }
+
+.pinsZero {
+    transition: opacity 0.5s ease;
 }
 
+
+.pinsTwenty {
+    transform: translateY(20%);
+    transition: opacity 0.5s ease;
+}
+
+.pinsForty {
+    transform: translateY(40%);
+    transition: opacity 0.5s ease;
+}
+
+.pinsSixty {
+    transform: translateY(60%);
+    transition: opacity 0.5s ease;
+}
+
+.pinsEighty {
+    transform: translateY(80%);
+    transition: opacity 0.5s ease;
+}
+
+/* 
 .googleSearch {
     top: 700px;
     left: 20%;
@@ -67,7 +101,7 @@ body {
     top: 1500px;
     left: 40%;
     height: 150px;
-}
+} */
 
 .hide {
     opacity: 0;

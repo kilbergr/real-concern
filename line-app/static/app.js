@@ -3,7 +3,7 @@ body.style.backgroundColor = 'white';
 
 // trigger this function every time the user scrolls
 window.onscroll = function () {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
   const heightDisplay = document.getElementById('heightDisplay');
   const startingPoint = 0;
   var fadeImage = document.getElementById("fadeImage");
@@ -16,19 +16,56 @@ window.onscroll = function () {
   line.style.height = `${height}px`;
   heightDisplay.textContent = `Carbon: ${height} g`;
 
-  var scroll = window.pageYOffset;
-  if (scroll < 600) {
+  var scroll = window.scrollY;
+  if (scroll < 5) {
     body.style.backgroundColor = 'white';
-    googleSearch.style.top = '100vh';
-  } else if (scroll >= 600 && scroll < 1200) {
-    body.style.backgroundColor = 'rgb(255, 237, 237)';
+    // fetch('/on?time=.05')
+    spamFilter.classList.add("show");
+    shortEmailPhones.classList.add("show");
+  }
+  else if (scroll >= 5 && scroll < 10) {
+    body.style.backgroundColor = 'white';
+    // fetch('/on?time=.2')
+    spamFilter.classList.add("hide");
+    spamFilter.classList.remove("show");
+  }
+  else if (scroll >= 7 && scroll < 14) {
+    body.style.backgroundColor = 'white';
+    // fetch('/on?time=.4')
+    shortEmailPhones.classList.add("hide");
+    shortEmailPhones.classList.remove("show");
+
+    shortEmailLaptops.classList.add("show");
+  }
+  else if (scroll >= 12 && scroll < 20) {
+    body.style.backgroundColor = 'white';
+    // fetch('/on?time=.4')
+    shortEmailLaptops.classList.add("hide");
+    shortEmailLaptops.classList.remove("show");
+
     googleSearch.classList.add("show");
-    googleSearch.style.top = (100 - ((scroll - 600) / 6)) + 'vh';
+  }
+  else if (scroll >= 16 && scroll < 24) {
+    body.style.backgroundColor = 'white';
+    // fetch('/on?time=.8')
+    googleSearch.classList.add("hide");
+    googleSearch.classList.remove("show");
+
+    shortText.classList.add("show");
+  }
+  
+  
+  else if (scroll < 600) {
+    body.style.backgroundColor = 'white';
+    // fetch('/on?time=.1')
+  } else if (scroll >= 600 && scroll < 700) {
+    // fetch('/on?time=5')
+  } else if (scroll >= 700 && scroll < 1200) {
+    body.style.backgroundColor = 'rgb(255, 237, 237)';
     iphoneEmails.style.top = '100vh';
     macbooks.style.top = '100vh';
   } else if (scroll >= 1200 && scroll < 1800) {
     body.style.backgroundColor = 'rgb(231, 178, 178)';
-    googleSearch.classList.remove("show");
     iphoneEmails.classList.add("show");
     iphoneEmails.style.top = (100 - ((scroll - 1200) / 6)) + 'vh';
     macbooks.classList.add("show");
