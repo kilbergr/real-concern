@@ -14,10 +14,15 @@
         </div>
         <div class="line"></div>
         <div id="heightDisplay"></div>
-        <p id="iphoneEmails" class="icons iphoneEmails hide">An email on an iPhone</p>
-        <div></div><p id="googleSearch" class="icons googleSearch hide">A google search</p>
-        <img id="macbooks" class="icons macbooks hide" src="static/images/macbooks.jpg"></img>
-        <img id="appleStore" class="icons appleStore hide" src="static/images/apple_store.jpg"></img>
+        <div class="wrapper">
+            <div id="spamFilter" class="pinsZero spamFilter show">A spam email caught by filters (.05 g)</div>
+            <div id="shortEmailPhones" class="pinsTwenty shortEmailPhones show">A short email sent from one phone and received on another (.2 g)</div>
+            <div id="shortEmailLaptops" class="pinsForty shortEmailLaptops hide">A short email sent from one laptop and received on another (.4 g)</div>
+            <div id="googleSearch" class="pinsZero googleSearch hide">A Google search (.6 g)</div>
+            <div id="shortText" class="pinsZero shortText hide">A text message that takes 30 seconds to write and 30 seconds to read (.8 g)</div>
+        </div>
+
+        
         <script type="text/javascript" src="static/app.js"></script>
     </body>
 

@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template('./index.html')
 
+@app.route("/snap")
+def snap():
+    return render_template('./snap.html')
+
 @app.route("/on", methods=["GET"])
 def turn_on():
     kasaIP = '192.168.0.1'
